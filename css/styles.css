@@ -48,6 +48,10 @@ a {
   height: 100%
 }
 
+.art_item {
+  padding: 5px 5px 5px 5px;
+}
+
 .timeline {
   margin: 0 auto;
   max-width: 90%;
