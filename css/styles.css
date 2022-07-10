@@ -52,7 +52,7 @@ a {
   margin: 0 0 0 0px;
 }
 
-#content::before {
+.content::before {
   content: '';
   position: relative;
   border: 10px solid transparent;
@@ -63,7 +63,7 @@ a {
   left: 0;
 }
 
-#content {
+.content {
   color: #1E3F20;
   left: 20px;
   top: 0;
