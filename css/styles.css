@@ -38,6 +38,16 @@ a {
   width: 100px;
 }
 
+.art_portfolio {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #EFF6E0;
+  height: 100%
+}
+
 .timeline {
   margin: 0 auto;
   max-width: 90%;
