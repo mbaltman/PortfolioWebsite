@@ -45,7 +45,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 3px 4fr;
   color: #EFF6E0;
-  height: 100vh;
+  height: 100%
 }
 
 .timeline_component {
