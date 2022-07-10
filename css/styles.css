@@ -1,13 +1,14 @@
 /*Tags*/
 body {
-  background-color: #F7F7F2;
+  background-color: #A89696;
   margin: 0;
+  font-family: monospace;
 }
 
 div {
-  background-color: #7FC8A9;
-  color: #F7F7F2;
-  padding: 5px;
+  background-color: #518972;
+  color: #EFF6E0;
+  font-family: monospace;
 }
 
 h1 {
@@ -17,17 +18,85 @@ h1 {
 table {
   width: 100%;
   border-spacing: 0;
+  font-family: monospace;
 }
 
 a {
   text-decoration: none;
-  color: #F7F7F2;
+  color: #EFF6E0;
   font-size: 20px;
 }
 
 /*Classes*/
-/*.header {}*/
+#header {
+  padding: 5px;
+}
+
 .tab {
-  background-color: #5F7A61;
-  padding: 3px;
+  background-color: #1E3F20;
+  padding: 10px;
+  width: 100px;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 4fr;
+  color: #EFF6E0;
+  height: 100vh;
+}
+
+.timeline_component {
+  margin: 0 0 0 0px;
+}
+
+#content::before {
+  content: '';
+  position: relative;
+  border: 10px solid transparent;
+  border-right: 10px solid #EFF6E0;
+  display: inline-block;
+  transform: translateX(-30px);
+  top: 15px;
+  left: 0;
+}
+
+#content {
+  color: #1E3F20;
+  left: 20px;
+  top: 0;
+  background: #EFF6E0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 0 10px 0 10px
+}
+
+.timeline_date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  width: 90%;
+  text-align: center;
+  color: #1E3F20;
+  background: #EFF6E0;
+  border-radius: 5px;
+}
+
+.timeline_middle {
+  position: relative;
+  background: #1E3F20;
+}
+
+.timeline_point {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #1E3F20;
+  border-radius: 50%;
 }
