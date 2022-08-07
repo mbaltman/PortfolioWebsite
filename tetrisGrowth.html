@@ -10,62 +10,88 @@
   <link rel="icon" href="css/favicon.ico">
 </head>
 
+<style>
+  body {
+    height: 100vh;
+  }
+
+  #box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  #wrap {
+    padding: 25px;
+    flex: auto;
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    resize: both;
+    position: relative;
+    z-index: 2;
+  }
+
+  #frame {
+
+
+    width: 1900px;
+    height: 1060px;
+    border: none;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: center 0;
+    -o-transform: scale(0.8);
+    -o-transform-origin: center 0;
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: center 0;
+
+  }
+</style>
+
+
 <body>
+  <div id="box">
+
+    <div id="header">
+      <h1> Maxwell Altman</h1>
+      <p> Computer Engineer | Game Developer | Digital Designer</p>
+    </div>
+
+    <!-- insert head shot! /!-->
+    <table id="navBar">
+      <tr>
+        <td class="tab">
+          <a href="Art_Portfolio.html">Art Portfolio</a>
+        </td>
+
+        <td class="tab">
+          <a href="Tech_Projects.html">Tech Projects</a>
+        </td>
+        <td class="tab">
+          <a href="index.html">Resume</a>
+        </td>
+        <td class="tab"></td>
+        <td class="tab"></td>
+        <td class="tab"></td>
 
 
-  <div id="header">
-    <h1> Maxwell Altman</h1>
-    <p> Computer Engineer | Game Developer | Digital Designer</p>
+      </tr>
+    </table>
+
+    <div id="wrap">
+      <center>
+        <iframe id="frame" src="https://i.simmer.io/@altmanm/~2f70909f-0278-d816-201d-cc4c753283c0"></iframe>
+      </center>
+
+    </div>
+
+
   </div>
 
-  <!-- insert head shot! /!-->
-  <table id="navBar">
-    <tr>
-      <td class="tab">
-        <a href="Art_Portfolio.html">Art Portfolio</a>
-      </td>
 
-      <td class="tab">
-        <a href="Tech_Projects.html">Tech Projects</a>
-      </td>
-      <td class="tab">
-        <a href="index.html">Resume</a>
-      </td>
-      <td class="tab"></td>
-      <td class="tab"></td>
-      <td class="tab"></td>
-
-
-    </tr>
-  </table>
-
-  <style>
-    #wrap {
-      height: 100%;
-      padding: 5px;
-      overflow: hidden;
-      max-width: 90%;
-      padding: 25px;
-      margin: 0 auto;
-    }
-
-    #frame {
-      width: 95%;
-      height: 95%;
-      border: 1px solid black;
-    }
-
-    #frame {
-      zoom: 0.75;
-      -moz-transform: scale(0.6);
-      -moz-transform-origin: 0 0;
-    }
-  </style>
-
-
-  <div id="wrap">
-    <iframe id="frame" src="https://i.simmer.io/@altmanm/~2f70909f-0278-d816-201d-cc4c753283c0"></iframe>
-  </div>
 
 
 
