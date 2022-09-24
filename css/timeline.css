@@ -17,17 +17,6 @@
   top: 0;
 }
 
-.content::before {
-  content: '';
-  position: relative;
-  border: 10px solid transparent;
-  border-right: 10px solid #EFF6E0;
-  display: inline-block;
-  transform: translateX(-30px);
-  top: 15px;
-  left: 0;
-}
-
 .content {
   color: #1E3F20;
   left: 20px;
