@@ -178,8 +178,9 @@
 
   <script type="module">
     import Web3Chat from "https://bylines-cdn.s3.amazonaws.com/src/bylines.js"
-    var byl = new Web3Chat("b57404ff-11b5-46f3-b9cf-c959597f5b26");
+    var byl = new Web3Chat("4e7062a3-4976-4305-8c0b-168901b09cb0", "Local");
     var MaxWallet = "0x44a574bC80F7b06249F5e585168454BDFAb926cd";
+    await byl.initializeWidget();
 
     document.querySelector("#chat").addEventListener("click", () => {
       console.log("clicked");
