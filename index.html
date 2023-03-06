@@ -171,11 +171,15 @@
 
   </div>
 
-  <script type="module">
-    import Web3Chat from "https://bylines-cdn.s3.amazonaws.com/src/bylines.js"
-    var byl = new Web3Chat("f46b78bd-f3a9-4a4f-b38b-abaada0abfce");
-    await byl.initializeWidget();
 
+  <script type="module">
+  import Web3Chat from "https://bylines-cdn.s3.amazonaws.com/src/bylines.js";
+
+  // instantiate Web3chat with appId to validate
+  var byl = new Web3Chat("f46b78bd-f3a9-4a4f-b38b-abaada0abfce");
+
+  // injects iframe into parent dom along with open/close button for chat
+  await byl.initializeWidget();
   </script>
 
 </body>
