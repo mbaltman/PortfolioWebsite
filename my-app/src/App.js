@@ -1,38 +1,10 @@
-import pixelDesktop from './imgs/ComputerPixelArt-HighResolution.png';
+import './App.css';
 
-import './css/pixelDesktop.css';
 import {useState} from "react";
-
-// AboutMe.js
-const AboutMe = () => {
-    return (
-        <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">About Me</h2>
-            <p>Your about me content goes here...</p>
-        </div>
-    );
-};
-
-// CubeGame.js
-const CubeGame = () => {
-    return (
-        <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">Cube Game</h2>
-            <p>Your cube game content goes here...</p>
-        </div>
-    );
-};
-
-// Typo.js
-const Typo = () => {
-    return (
-        <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">Typo</h2>
-            <p>Your typo content goes here...</p>
-        </div>
-    );
-};
-
+import NavItem from "./NavItem/NavItem";
+import AboutMe from "./PageContent/AboutMe";
+import Typo from "./PageContent/Typo";
+import CubeGame from "./PageContent/CubeGame";
 function App() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');
 
@@ -53,27 +25,32 @@ function App() {
       <div className="App">
           <div className="fullScreen" id="fullScreenImage">
               <img id="pixelDesktopImg"
-                   src={pixelDesktop}
+                   src="/images/ComputerPixelArt-HighResolution.png"
                    alt="image of a desk, with two monitors, rendered in a pixel art style "/>
           </div>
 
           <div className="fullScreen" id="fullScreenContent">
               <div id="navBar">
-                  <NavItem
-                      title="About Me"
-                      isActive={activeComponent === 'AboutMe'}
-                      onClick={() => setActiveComponent('AboutMe')}
-                  />
-                  <NavItem
-                      title="Cube Game"
-                      isActive={activeComponent === 'CubeGame'}
-                      onClick={() => setActiveComponent('CubeGame')}
-                  />
-                  <NavItem
-                      title="Typo"
-                      isActive={activeComponent === 'Typo'}
-                      onClick={() => setActiveComponent('Typo')}
-                  />
+                  <div id="navBarInner">
+                      <NavItem
+                          title="About Me"
+                          iconSrc="/images/AboutMeIcon.png"
+                          isActive={activeComponent === 'AboutMe'}
+                          onClick={() => setActiveComponent('AboutMe')}
+                      />
+                      <NavItem
+                          title="Cube Game"
+                          iconSrc="/images/CubeGameIcon.png"
+                          isActive={activeComponent === 'CubeGame'}
+                          onClick={() => setActiveComponent('CubeGame')}
+                      />
+                      <NavItem
+                          title="Typo"
+                          iconSrc="/images/AboutMeIcon.png"
+                          isActive={activeComponent === 'Typo'}
+                          onClick={() => setActiveComponent('Typo')}
+                      />
+                  </div>
               </div>
 
               <div id="content">
@@ -83,16 +60,5 @@ function App() {
       </div>
     );
 }
-
-const NavItem = ({title, isActive, onClick}) => {
-    return (
-        <div
-            className={`p-4 cursor-pointer hover:bg-gray-100 ${isActive ? 'bg-gray-200' : ''}`}
-            onClick={onClick}
-        >
-            <span className="text-lg font-medium cursor-pointer unselectable-text">{title}</span>
-        </div>
-    );
-};
 
 export default App;

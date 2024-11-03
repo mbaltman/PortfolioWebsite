@@ -40,7 +40,6 @@ body {
 
 #navBar {
    background-color: #F0EFEF;
-    
     display: inline-block;
     align-self: flex-end;
     width: 22vw;
@@ -48,6 +47,10 @@ body {
     position: absolute;    /* Position absolutely within fullScreenContent */
     left: 14vw;          /* Position from left edge */
     bottom: 14vw;        /* Position from bottom edge */
+}
+
+#navBarInner {
+    padding-top: 24px;
 }
 
 #content {
