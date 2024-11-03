@@ -1,0 +1,2 @@
+body{background-color:#2c4a5b;margin:0;overflow-x:hidden;overflow-y:hidden;padding:0}.fullScreen{display:flex;height:100vh;left:0;position:absolute;top:0;width:100vw}#fullScreenImage{z-index:2}#fullScreenContent{z-index:1}#pixelDesktopImg{align-self:flex-end;display:inline-block;object-fit:fill;width:100vw}#navBar{bottom:14vw;height:41vw;left:14vw;width:22vw}#content,#navBar{align-self:flex-end;background-color:#f0efef;display:inline-block;position:absolute}#content{bottom:18vw;height:28vw;left:37vw;width:59vw}
+/*# sourceMappingURL=main.fad89173.css.map*/
