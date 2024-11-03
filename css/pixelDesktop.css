@@ -1,0 +1,26 @@
+
+body {
+    background-color: #2C4A5B;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    padding: 0;
+}
+
+#pixelDesktopImg {
+    width: 100vw;
+    display: block; /* Removes default inline spacing */
+    object-fit: fill; /* Makes image fill the container */
+}
+
+#navBar {
+    background-color: #F0EFEF;
+    width: 20vw;
+    height: 80vw
+}
+
+#content {
+    background-color: #F0EFEF;
+    width: 40vw;
+    height: 80vw
+}
