@@ -15,9 +15,16 @@ body {
     height: 100vh;
     display: flex;
 }
+.unselectable-text {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
 
 #fullScreenImage{
     z-index: 2;
+    pointer-events: none;
 }
 
 #fullScreenContent{
