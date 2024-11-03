@@ -7,20 +7,54 @@ body {
     padding: 0;
 }
 
+.fullScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#fullScreenImage{
+    z-index: 2;
+}
+
+#fullScreenContent{
+    z-index: 1;
+}
+
+
 #pixelDesktopImg {
     width: 100vw;
-    display: block; /* Removes default inline spacing */
     object-fit: fill; /* Makes image fill the container */
+    display: inline-block;
+    align-self: flex-end;
 }
 
 #navBar {
-    background-color: #F0EFEF;
-    width: 20vw;
-    height: 80vw
+   background-color: #F0EFEF;
+    
+    display: inline-block;
+    align-self: flex-end;
+    width: 22vw;
+    height: 41vw;
+    position: absolute;    /* Position absolutely within fullScreenContent */
+    left: 14vw;          /* Position from left edge */
+    bottom: 14vw;        /* Position from bottom edge */
 }
 
 #content {
     background-color: #F0EFEF;
-    width: 40vw;
-    height: 80vw
+    
+    display: inline-block;
+    align-self: flex-end;
+
+    width: 59vw;
+    height: 28vw;
+    position: absolute;    /* Position absolutely within fullScreenContent */
+    left: 37vw;          /* Position from left edge */
+    bottom: 18vw;        /* Position from bottom edge */
+
 }
+
