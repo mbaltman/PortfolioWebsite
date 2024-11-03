@@ -24,7 +24,6 @@ body {
     z-index: 1;
 }
 
-
 #pixelDesktopImg {
     width: 100vw;
     object-fit: fill; /* Makes image fill the container */
