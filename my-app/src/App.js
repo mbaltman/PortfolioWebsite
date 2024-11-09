@@ -1,7 +1,7 @@
 import './App.css';
 
 import {useState} from "react";
-import NavItem from "./NavItem/NavItem";
+import NavItem from "./Components/NavItem";
 import AboutMe from "./PageContent/AboutMe";
 import Typo from "./PageContent/Typo";
 import CubeGame from "./PageContent/CubeGame";
@@ -39,16 +39,16 @@ function App() {
                           onClick={() => setActiveComponent('AboutMe')}
                       />
                       <NavItem
+                          title="Typo"
+                          iconSrc="/images/TypoLogo.png"
+                          isActive={activeComponent === 'Typo'}
+                          onClick={() => setActiveComponent('Typo')}
+                      />
+                      <NavItem
                           title="Cube Game"
                           iconSrc="/images/CubeGameIcon.png"
                           isActive={activeComponent === 'CubeGame'}
                           onClick={() => setActiveComponent('CubeGame')}
-                      />
-                      <NavItem
-                          title="Typo"
-                          iconSrc="/images/AboutMeIcon.png"
-                          isActive={activeComponent === 'Typo'}
-                          onClick={() => setActiveComponent('Typo')}
                       />
                   </div>
               </div>

@@ -42,11 +42,12 @@ body {
    background-color: #F0EFEF;
     display: inline-block;
     align-self: flex-end;
-    width: 22vw;
+    width: 21.5vw;
     height: 41vw;
     position: absolute;    /* Position absolutely within fullScreenContent */
     left: 14vw;          /* Position from left edge */
     bottom: 14vw;        /* Position from bottom edge */
+    overflow-y: auto
 }
 
 #navBarInner {
@@ -64,6 +65,7 @@ body {
     position: absolute;    /* Position absolutely within fullScreenContent */
     left: 37vw;          /* Position from left edge */
     bottom: 18vw;        /* Position from bottom edge */
+    overflow-y: auto
 
 }
 

@@ -1,10 +1,12 @@
 
 .navItem {
     background-color: transparent;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 .navItem:hover {
     background-color: #CEE9F1;
@@ -13,15 +15,18 @@
     background-color: #ADE4F3;
 }
 
+
 .navItemTitle {
     color: #2C3036;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
+    align-self: center;
 }
 .navItemIcon {
     width: 40px;
     height: 40px;
-    
+    border-radius: 20px;
+    align-self: center;
 }
 
