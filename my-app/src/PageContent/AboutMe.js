@@ -6,12 +6,14 @@ const AboutMe = () => {
     return (
         <div className="projectCard">
             <div className="titleSection">
-                <img id="aboutMeImage" src="/images/AboutMeIcon.png" alt=""/>
+                <div className="aboutMeImageContainer">
+                    <img id="aboutMeImage" src="/images/AboutMeIconLarge.png" alt=""/>
+                </div>
                 <div className="topTitleSection">
                     <p><span className="boldTitle">Name:</span> Maxwell Altman</p>
                     <p><span className="boldTitle">Job:</span> Founding Engineer @ Typo*</p>
                     <p><span className="boldTitle"> Passions:</span> pixel art, puzzle games, writing code </p>
-                    <p><span className="boldTitle">Education:</span> Computer Engineer @ University of Illinois - Urbana Champaing</p>
+                    <p><span className="boldTitle">Education:</span> Computer Engineer @ University of Illinois - Urbana Champaign</p>
                 </div>
             </div>
 
@@ -19,13 +21,18 @@ const AboutMe = () => {
                 <p><span className="boldTitle">Skills:</span></p>
                 <SkillContainer>
                     <SkillItem skill={Skill.UNITY}/>
-                    <SkillItem skill={Skill.UNITY}/>
+                    <SkillItem skill={Skill.DOTNET}/>
+                    <SkillItem skill={Skill.SWIFTUI}/>
+                    <SkillItem skill={Skill.SWIFT}/>
+                    <SkillItem skill={Skill.PICO8}/>
+                    <SkillItem skill={Skill.FIGMA}/>
+                    <SkillItem skill={Skill.BLENDER}/>
                 </SkillContainer>
             </div>
 
 
-            <p><span className="boldTitle unselectable-text">About Me:</span>
-                I am a full stack developer with a passion for video game
+            <p><span className="boldTitle unselectable-text">About Me:</span> I am a 
+                full stack developer with a passion for video game
                 development. My favorite video game is Tetris. You can play
                 my version of it here. For the last two years, I have worked
                 at Typo*, a messaging app for creative teams. Working on a small

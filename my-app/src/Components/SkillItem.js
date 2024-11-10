@@ -10,8 +10,13 @@ export const SkillItem = ({skill}) => {
 };
 
 export const Skill = {
-    UNITY: ["Unity", "/images/TypoLogo.png"],
-    DOTNET: ["dotnet", "/images/TypoLogo.png"]
+    BLENDER: ["Blender", "/images/skillIcons/BlenderLogo.png"],
+    DOTNET: ["dotnet", "/images/skillIcons/DotnetLogo.png"],
+    FIGMA: ["Figma", "/images/skillIcons/FigmaLogo.png"],
+    PICO8: ["PICO8", "/images/skillIcons/PICO8Logo.png"],
+    SWIFT: ["UIKit / UIKit", "/images/skillIcons/SwiftLogo.png"],
+    SWIFTUI: ["SwiftUI", "/images/skillIcons/SwiftUILogo.png"],
+    UNITY: ["Unity", "/images/skillIcons/UnityLogo.png"],
 }
 
 export const SkillContainer = ({ children }) => {

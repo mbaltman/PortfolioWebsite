@@ -22,6 +22,7 @@ body {
     user-select: none; /* Standard */
 }
 
+
 #fullScreenImage{
     z-index: 2;
     pointer-events: none;
@@ -69,3 +70,25 @@ body {
 
 }
 
+#embeddedResume {
+    width: 100%;
+    height: 100%;
+}
+
+#resumeText:hover {
+    scale: 105%;
+}
+
+#resumeText{
+    all: unset;
+    z-index: 3;
+    position: absolute;    /* Position absolutely within fullScreenContent */
+    left: 3vw;          /* Position from left edge */
+    bottom: 48.5vw;
+    color: #2C3036;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    transform: rotate(-23deg);
+    text-align: center;
+}
