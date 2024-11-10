@@ -49,24 +49,6 @@ function App() {
                             isActive={activeComponent === 'AboutMe'}
                             onClick={() => setActiveComponent('AboutMe')}
                         />
-                        <NavItem
-                            title="Typo"
-                            iconSrc="/images/TypoLogo.png"
-                            isActive={activeComponent === 'Typo'}
-                            onClick={() => setActiveComponent('Typo')}
-                        />
-                        <NavItem
-                            title="Cube Game"
-                            iconSrc="/images/CubeGameIcon.png"
-                            isActive={activeComponent === 'CubeGame'}
-                            onClick={() => setActiveComponent('CubeGame')}
-                        />
-                        <NavItem
-                            title="Tetris Growth"
-                            iconSrc="/images/CubeGameIcon.png"
-                            isActive={activeComponent === 'Tetris'}
-                            onClick={() => setActiveComponent('Tetris')}
-                        />
                     </div>
                 </div>
 
