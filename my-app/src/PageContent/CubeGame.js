@@ -14,6 +14,13 @@ const CubeGame = () => {
                     <h1 className="boldTitle">Untitled Cube Game</h1>
                     <ProgressItem progress={ProgressStatus.INPROGRESS}></ProgressItem>
                 </div>
+                <a className="boldTitle linkButton"
+                    href="https://gitfront.io/r/mbaltman/Zwn9VZMJbYYr/CubeGame/">
+                    Read<br/>Code
+                </a>
+                <button className="boldTitle linkButton">
+                    Play<br/>Demo
+                </button>
             </div>
 
             <div className="screenRow thinRow">

@@ -16,7 +16,7 @@ const AboutMe = () => {
                     <p><span className="boldLabel">Education:</span> Computer Engineer @ University of Illinois - Urbana Champaign</p>
                 </div>
             </div>
-            
+
             <SkillContainer>
                 <SkillItem skill={Skill.UNITY}/>
                 <SkillItem skill={Skill.DOTNET}/>

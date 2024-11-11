@@ -92,7 +92,7 @@ p {
     padding-bottom: 50px;
 }
 
-#submitButton{
+.linkButton {
     all: unset;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
@@ -103,17 +103,17 @@ p {
     border-color: #2c3036;
     border-radius: 12.5px;
     border-width: 2px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 12px;
     text-align: center;
     width: fit-content;
 }
-
-#submitButton:hover {
+.linkButton:hover{
     background-color: #CEE9F1;
     scale: 103%;
+}
+#submitButton{
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 #contactMeTitle {

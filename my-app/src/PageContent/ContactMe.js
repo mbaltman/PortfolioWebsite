@@ -134,7 +134,9 @@ const ContactMe = () => {
                               onChange={handleChange}
                     ></textarea>
                 </div>
-                <button type="submit" id="submitButton">Send Message</button>
+                <button type="submit" 
+                        id="submitButton" 
+                        className="linkButton">Send Message</button>
                 </form>)
         } else {
             return (<div className="projectCard" id="contactMeProjectCardSubmitted">
