@@ -48,11 +48,14 @@ body {
     position: absolute;    /* Position absolutely within fullScreenContent */
     left: 14vw;          /* Position from left edge */
     bottom: 14vw;        /* Position from bottom edge */
-    overflow-y: auto
 }
 
 #navBarInner {
     padding-top: 24px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto
 }
 
 #content {

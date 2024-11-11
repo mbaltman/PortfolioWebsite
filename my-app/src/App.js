@@ -49,11 +49,17 @@ function App() {
                             isActive={activeComponent === 'AboutMe'}
                             onClick={() => setActiveComponent('AboutMe')}
                         />
+                        <NavItem
+                            title="Untitled Cube Game"
+                            iconSrc="/images/CubeGame/CubeGameIcon.png"
+                            isActive={activeComponent === 'CubeGame'}
+                            onClick={() => setActiveComponent('CubeGame')}
+                        />
                     </div>
                 </div>
 
                 <div id="content">
-                    { renderContent() }
+                    {renderContent()}
                 </div>
             </div>
         </div>

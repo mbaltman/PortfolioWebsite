@@ -22,7 +22,10 @@ export const Skill = {
 export const SkillContainer = ({ children }) => {
     return (
         <div className="skillContainer">
-            {children}
+            <p className="skillTitle"><span className="boldLabel">Skills:</span></p>
+            <div className="skillItemContainer">
+                {children}
+            </div>
         </div>
     );
 };

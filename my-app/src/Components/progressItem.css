@@ -1,0 +1,25 @@
+.progressItem {
+    display: flex;
+    gap: 12.5px;
+    background-color: #2C3036;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border-radius: 12.5px;
+    flex-shrink: 1;
+    width: fit-content;
+}
+
+.progressItemIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progressItemTitle{
+    color: #F0EFEF;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}

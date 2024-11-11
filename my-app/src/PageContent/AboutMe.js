@@ -6,32 +6,28 @@ const AboutMe = () => {
     return (
         <div className="projectCard">
             <div className="titleSection">
-                <div className="aboutMeImageContainer">
-                    <img id="aboutMeImage" src="/images/AboutMeIconLarge.png" alt=""/>
+                <div className="titleImageContainer">
+                    <img id="titleImage" src="/images/AboutMeIconLarge.png" alt=""/>
                 </div>
                 <div className="topTitleSection">
-                    <p><span className="boldTitle">Name:</span> Maxwell Altman</p>
-                    <p><span className="boldTitle">Job:</span> Founding Engineer @ Typo*</p>
-                    <p><span className="boldTitle"> Passions:</span> pixel art, puzzle games, writing code </p>
-                    <p><span className="boldTitle">Education:</span> Computer Engineer @ University of Illinois - Urbana Champaign</p>
+                    <p><span className="boldLabel">Name:</span> Maxwell Altman</p>
+                    <p><span className="boldLabel">Job:</span> Founding Engineer @ Typo*</p>
+                    <p><span className="boldLabel"> Passions:</span> pixel art, puzzle games, writing code </p>
+                    <p><span className="boldLabel">Education:</span> Computer Engineer @ University of Illinois - Urbana Champaign</p>
                 </div>
             </div>
-
-            <div className="aboutMeSkillContainer">
-                <p><span className="boldTitle">Skills:</span></p>
-                <SkillContainer>
-                    <SkillItem skill={Skill.UNITY}/>
-                    <SkillItem skill={Skill.DOTNET}/>
-                    <SkillItem skill={Skill.SWIFTUI}/>
-                    <SkillItem skill={Skill.SWIFT}/>
-                    <SkillItem skill={Skill.PICO8}/>
-                    <SkillItem skill={Skill.FIGMA}/>
-                    <SkillItem skill={Skill.BLENDER}/>
-                </SkillContainer>
-            </div>
-
-
-            <p><span className="boldTitle unselectable-text">About Me:</span> I am a 
+            
+            <SkillContainer>
+                <SkillItem skill={Skill.UNITY}/>
+                <SkillItem skill={Skill.DOTNET}/>
+                <SkillItem skill={Skill.SWIFTUI}/>
+                <SkillItem skill={Skill.SWIFT}/>
+                <SkillItem skill={Skill.PICO8}/>
+                <SkillItem skill={Skill.FIGMA}/>
+                <SkillItem skill={Skill.BLENDER}/>
+            </SkillContainer>
+            
+            <p><span className="boldLabel unselectable-text">About Me:</span> I am a 
                 full stack developer with a passion for video game
                 development. My favorite video game is Tetris. You can play
                 my version of it <a href="https://i.simmer.io/@altmanm/~2f70909f-0278-d816-201d-cc4c753283c0">here</a>. For the last two years, I have worked
