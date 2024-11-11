@@ -2,6 +2,10 @@ import './projectCard.css'
 import emailjs from '@emailjs/browser';
 
 import React, { useState } from 'react';
+import AboutMe from "./AboutMe";
+import CubeGame from "./CubeGame";
+import Typo from "./Typo";
+import Tetris from "./Tetris";
 
 const ContactMe = () => {
     emailjs.init({
@@ -18,6 +22,8 @@ const ContactMe = () => {
         email: false,
         message: false
     });
+
+    const [submitted, setSubmitted] = useState(false);
 
     const validateEmail = (email) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,51 +92,61 @@ const ContactMe = () => {
             // Reset form after successful submission
             setFormData({ name: '', email: '', message: '' });
             setTouched({ name: false, email: false, message: false });
-            alert('Message sent successfully!');
+            setSubmitted(true)
         } catch (error) {
             console.error('Failed to send message:', error);
             alert('Failed to send message. Please try again.');
         }
     };
-    
-    return (
-        <form onSubmit={handleSubmit} className="projectCard" id="contactMeProjectCard">
-            <h1 className="boldTitle" id="contactMeTitle"> Contact Me</h1>
-            <div className="contactMeCol">
-                <p className="boldLabel">Name:</p>
-                <input type="text"
-                       className={getFieldClassName('name')}
-                       id="name" 
-                       placeholder="Your Name" 
-                       required
-                       value={formData.name}
-                       onChange={handleChange}
-                />
-            </div>
-            <div className="contactMeCol">
-                <p className="boldLabel">Email:</p>
-                <input type="email"
-                       className={getFieldClassName('email')}
-                       id="email"
-                       placeholder="Your Email" 
-                       required
-                       value={formData.email}
-                       onChange={handleChange}/>
-            </div>
-            <div className="contactMeCol">
-                <p className="boldLabel"> Message:</p>
-                <textarea className={getFieldClassName('message')}
-                          id="message" 
-                          rows="5"
-                          placeholder="Your Message"
-                          value={formData.message}
-                          onChange={handleChange}
-                ></textarea>
-            </div>
-            <button type="submit" id="submitButton"
-            >Send Message</button>
-        </form>
-    );
+
+    const renderContent = () => {         
+        if (!submitted) {
+            return (<form onSubmit={handleSubmit} className="projectCard" id="contactMeProjectCard">
+                <h1 className="boldTitle" id="contactMeTitle"> Contact Me</h1>
+                <div className="contactMeCol">
+                    <p className="boldLabel">Name:</p>
+                    <input type="text"
+                           className={getFieldClassName('name')}
+                           id="name"
+                           placeholder="Your Name"
+                           required
+                           value={formData.name}
+                           onChange={handleChange}
+                    />
+                </div>
+                <div className="contactMeCol">
+                    <p className="boldLabel">Email:</p>
+                    <input type="email"
+                           className={getFieldClassName('email')}
+                           id="email"
+                           placeholder="Your Email"
+                           required
+                           value={formData.email}
+                           onChange={handleChange}/>
+                </div>
+                <div className="contactMeCol">
+                    <p className="boldLabel"> Message:</p>
+                    <textarea className={getFieldClassName('message')}
+                              id="message"
+                              rows="5"
+                              placeholder="Your Message"
+                              value={formData.message}
+                              onChange={handleChange}
+                    ></textarea>
+                </div>
+                <button type="submit" id="submitButton">Send Message</button>
+                </form>)
+        } else {
+            return (<div className="projectCard" id="contactMeProjectCardSubmitted">
+                    <div id="submittedEmail">
+                        <img id="emailIcon" src="/images/Email_Icon.png" alt="did send"/>
+                        <p className="boldTitle">Thank you for reaching out!</p>
+                    </div>
+                </div>
+            )
+        }
+    };
+    return (renderContent());
 };
 
 export default ContactMe

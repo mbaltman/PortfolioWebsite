@@ -68,9 +68,7 @@ const CubeGame = () => {
                     on the app store. 
                 </p>
                 <img className="screenshot" src="/images/CubeGame/CubeGameScreenShot_DailyChallenge.png" alt=""/>
-
             </div>
-
         </div>
     );
 };
