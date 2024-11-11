@@ -11,6 +11,6 @@ export const ProgressItem = ({progress}) => {
 
 export const ProgressStatus = {
     COMPLETED: ["Completed", "#509D47"],
-    INPROGRESS: ["In Progress", "#C39E40"],
+    INPROGRESS: ["In Progress", "#E1D834"],
     PAUSED: ["Paused", "#9D4747"],
 }

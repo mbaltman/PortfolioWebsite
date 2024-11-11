@@ -5,13 +5,13 @@ import {ProgressItem, ProgressStatus} from "../Components/ProgressItem";
 
 const CubeGame = () => {
     return (
-        <div className="projectCard">
+        <div className="projectCard" id="cubeGameProjectCard">
             <div className="titleSection">
                 <div className="titleImageContainer">
                     <img id="titleImage" src="/images/CubeGame/CubeGameIcon.png" alt=""/>
                 </div>
                 <div className="topTitleSection">
-                    <p className="boldTitle">Untitled Cube Game</p>
+                    <h1 className="boldTitle">Untitled Cube Game</h1>
                     <ProgressItem progress={ProgressStatus.INPROGRESS}></ProgressItem>
                 </div>
             </div>

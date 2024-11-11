@@ -9,6 +9,10 @@
     gap: 12px;
 }
 
+#cubeGameProjectCard{
+    background-color: #EBE0FC;
+}
+
 .titleSection {
     display: flex;
     flex-direction: row;
@@ -61,6 +65,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     color: #2C3036;
+    margin-block: 0;
 }
 
 .screenshot {
@@ -85,4 +90,71 @@ p {
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+#submitButton{
+    all: unset;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #2C3036;
+    margin-block: 0;
+    border-style: solid ;
+    border-color: #2c3036;
+    border-radius: 12.5px;
+    border-width: 2px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    width: fit-content;
+}
+
+#submitButton:hover {
+    background-color: #CEE9F1;
+    scale: 103%;
+}
+
+#contactMeTitle {
+    text-align: center;
+}
+#contactMeProjectCard {
+    align-items: center;
+}
+.contactMeField{
+    flex-grow: 2;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #2C3036;
+    border-style: solid ;
+    border-color: #2c3036;
+    border-radius: 12.5px;
+    border-width: 2px;
+    padding: 10px;
+    outline-offset: 2px;
+    resize: vertical;
+}
+
+.contactMeField:focus-visible {
+    border-style: solid ;
+    border-color: #509D47;
+    border-radius: 12.5px;
+
+    outline: none;
+}
+
+.invalid-input{
+    border-style: solid ;
+    border-color: #9D4747;
+    border-radius: 12.5px;
+}
+
+
+.contactMeCol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%
 }

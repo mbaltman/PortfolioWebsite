@@ -78,20 +78,29 @@ body {
     height: 100%;
 }
 
-#resumeText:hover {
-    scale: 105%;
-}
-
-#resumeText{
+.postItNote {
     all: unset;
     z-index: 3;
-    position: absolute;    /* Position absolutely within fullScreenContent */
-    left: 3vw;          /* Position from left edge */
-    bottom: 48.5vw;
+    position: absolute;
     color: #2C3036;
     font-size: 1.5vw;
     font-weight: bolder;
     font-family: 'Inter', sans-serif;
-    transform: rotate(-23deg);
     text-align: center;
+}
+
+.postItNote:hover {
+    scale: 105%;
+}
+
+#resumeText{
+    left: 3vw;         
+    bottom: 48.5vw;
+    transform: rotate(-23deg);
+}
+
+#contactMe{
+    left: 4vw;
+    bottom: 39vw;
+    transform: rotate(23deg);
 }

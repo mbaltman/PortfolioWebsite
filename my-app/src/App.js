@@ -6,6 +6,7 @@ import AboutMe from "./PageContent/AboutMe";
 import Typo from "./PageContent/Typo";
 import CubeGame from "./PageContent/CubeGame";
 import Tetris from "./PageContent/Tetris";
+import ContactMe from "./PageContent/ContactMe";
 
 function App() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');
@@ -13,15 +14,17 @@ function App() {
     const renderContent = () => {
         switch(activeComponent) {
             case 'AboutMe':
-                return <AboutMe />;
+                return <AboutMe/>;
             case 'CubeGame':
-                return <CubeGame />;
+                return <CubeGame/>;
             case 'Typo':
-                return <Typo />;
+                return <Typo/>;
             case 'Tetris':
-                return <Tetris />;
+                return <Tetris/>;
             case 'Resume':
                 return <embed id="embeddedResume" src="/Resume.pdf#view=FitH&navpanes=0"/>;
+            case 'ContactMe':
+                return <ContactMe/>
             default: 
                 return '';
         }
@@ -30,12 +33,22 @@ function App() {
     return (
         <div className="App">
 
-        <button id="resumeText"
+            <button className="postItNote" 
+                    id="resumeText"
                     onClick={() => setActiveComponent('Resume')}
-            > My <br/> Resume</button>
+            > 
+                My <br/> Resume
+            </button>
+
+            <button className="postItNote"
+                    id="contactMe"
+                    onClick={() => setActiveComponent('ContactMe')}
+            > 
+                Contact <br/> Me
+            </button>
 
             <div className="fullScreen" id="fullScreenImage">
-            <img id="pixelDesktopImg"
+                <img id="pixelDesktopImg"
                      src="/images/ComputerPixelArt-HighResolution.png"
                      alt="image of a desk, with two monitors, rendered in a pixel art style "/>
             </div>
