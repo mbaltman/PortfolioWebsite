@@ -13,6 +13,10 @@
     background-color: #EBE0FC;
 }
 
+#tetrisProjectCard{
+    background-color: #C4FBCA;
+}
+
 .titleSection {
     display: flex;
     flex-direction: row;
@@ -45,6 +49,10 @@ p {
     height: 120px;
 }
 
+#tetrisTitleContainer{
+    width: 200px;
+}
+
 #titleImage {
     border-radius: 12.5px;
     aspect-ratio: 1;
@@ -58,6 +66,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     color: #2C3036;
+    text-wrap: nowrap;
 }
 
 .boldTitle {
@@ -66,12 +75,19 @@ p {
     font-weight: bold;
     color: #2C3036;
     margin-block: 0;
+    text-wrap: nowrap;
 }
 
-.screenshot {
+.screenshot-mobile {
     width: 10vw;
     height: 20vw;
     border-radius: 2vw;
+}
+
+.screenshot-desktop {
+    width: 20vw;
+    height: 10vw;
+    border-radius: 12px;
 }
 
 .screenRow {
@@ -83,13 +99,25 @@ p {
     gap: 12px;
 }
 
-.cubeGameRow{
-    align-items: center;
+.thickRow{
     gap: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
+    align-items: center;
+}
+.tetrisRow {
+    align-items: stretch;
+}
+
+#tetrisImageList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#tetrisContentText{
+    align-items: center;
+    display: flex;
 }
 
 .linkButton {

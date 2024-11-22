@@ -40,7 +40,7 @@ const CubeGame = () => {
                 <SkillItem skill={Skill.BLENDER}/>
             </SkillContainer>
 
-            <div className="screenRow cubeGameRow">
+            <div className="screenRow thickRow">
                 <p>This was my first time fully designing a game in Figma, before implementing it in code.
                     I wanted to keep the design minimal and 80’s themed, inspired by games like <a
                         href="https://www.isowords.xyz/">ioswords</a> and
@@ -50,12 +50,12 @@ const CubeGame = () => {
                     I usually find writing code more energizing than working on design, so I now
                     switch back and forth between the two, as I continue to work on this game.
                 </p>
-                <img className="screenshot" src="/images/CubeGame/CubeGameScreenShot_HomeScreen.png" alt=""/>
-                <img className="screenshot" src="/images/CubeGame/CubeGameScreenShot_GamePlay.png" alt=""/>
+                <img className="screenshot-mobile" src="/images/CubeGame/CubeGameScreenShot_HomeScreen.png" alt=""/>
+                <img className="screenshot-mobile" src="/images/CubeGame/CubeGameScreenShot_GamePlay.png" alt=""/>
             </div>
 
-            <div className="screenRow cubeGameRow">
-                <video className="screenshot" autoPlay loop muted>
+            <div className="screenRow thickRow">
+                <video className="screenshot-mobile" autoPlay loop muted>
                     <source src="/images/CubeGame/TrimmedCubeGameRecording.mp4" type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>
@@ -70,13 +70,13 @@ const CubeGame = () => {
                 </p>
             </div>
 
-            <div className="screenRow cubeGameRow">
+            <div className="screenRow thickRow">
                 <p>
                     I plan to implement multiple game modes including a daily challenge mode. This will also include live 
                     leader boards. This game is something I want to continue iterating on, with the end goal of sharing it
                     on the app store. 
                 </p>
-                <img className="screenshot" src="/images/CubeGame/CubeGameScreenShot_DailyChallenge.png" alt=""/>
+                <img className="screenshot-mobile" src="/images/CubeGame/CubeGameScreenShot_DailyChallenge.png" alt=""/>
             </div>
         </div>
     );

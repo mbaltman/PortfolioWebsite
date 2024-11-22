@@ -68,6 +68,12 @@ function App() {
                             isActive={activeComponent === 'CubeGame'}
                             onClick={() => setActiveComponent('CubeGame')}
                         />
+                        <NavItem
+                            title="Tetris Growth"
+                            iconSrc="/images/TetrisGrowth/OpeningScreen.png"
+                            isActive={activeComponent === 'Tetris'}
+                            onClick={() => setActiveComponent('Tetris')}
+                        />
                     </div>
                 </div>
 
