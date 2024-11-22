@@ -7,6 +7,7 @@ import Typo from "./PageContent/Typo";
 import CubeGame from "./PageContent/CubeGame";
 import Tetris from "./PageContent/Tetris";
 import ContactMe from "./PageContent/ContactMe";
+import Baskerville from "./PageContent/Baskerville";
 
 function App() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');
@@ -19,6 +20,8 @@ function App() {
                 return <CubeGame/>;
             case 'Typo':
                 return <Typo/>;
+            case 'Baskerville':
+                return <Baskerville/>;
             case 'Tetris':
                 return <Tetris/>;
             case 'Resume':
