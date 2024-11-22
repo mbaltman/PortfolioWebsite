@@ -8,6 +8,7 @@ import CubeGame from "./PageContent/CubeGame";
 import Tetris from "./PageContent/Tetris";
 import ContactMe from "./PageContent/ContactMe";
 import Baskerville from "./PageContent/Baskerville";
+import LittleShop from "./PageContent/LittleShop";
 
 function App() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');
@@ -22,6 +23,8 @@ function App() {
                 return <Typo/>;
             case 'Baskerville':
                 return <Baskerville/>;
+            case 'LittleShop':
+                return <LittleShop/>;
             case 'Tetris':
                 return <Tetris/>;
             case 'Resume':
@@ -72,14 +75,20 @@ function App() {
                             onClick={() => setActiveComponent('CubeGame')}
                         />
                         <NavItem
+                            title="Little Shop of Horros"
+                            subtitle="The Game"
+                            iconSrc="/images/LittleShop/LittleShopIcon.png"
+                            isActive={activeComponent === 'LittleShop'}
+                            onClick={() => setActiveComponent('LittleShop')}
+                        />
+                    </div>
+                        <NavItem
                             title="Tetris Growth"
                             iconSrc="/images/TetrisGrowth/OpeningScreen.png"
                             isActive={activeComponent === 'Tetris'}
                             onClick={() => setActiveComponent('Tetris')}
                         />
-                    </div>
                 </div>
-
                 <div id="content">
                     {renderContent()}
                 </div>

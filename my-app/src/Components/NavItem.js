@@ -1,12 +1,17 @@
 
 import './navItem.css'
-const NavItem = ({title, iconSrc, isActive, onClick}) => {
+const NavItem = ({title, subtitle, iconSrc, isActive, onClick}) => {
     return (
         <div
             className={`navItem ${isActive ? 'activeNavItem' : ''}`}
             onClick={onClick}
         >
-            <span className="navItemTitle unselectable-text">{title}</span>
+            <p className="navItemTitle unselectable-text">
+                {title}
+            <br/>
+                {subtitle}
+            </p>
+            
             <img className="navItemIcon" src={iconSrc} alt="icon image"/>
         </div>
     );

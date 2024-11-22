@@ -17,6 +17,10 @@
     background-color: #C4FBCA;
 }
 
+#littleShopProjectCard{
+    background-color: #FCE0E0;
+}
+
 .titleSection {
     display: flex;
     flex-direction: row;
@@ -49,7 +53,7 @@ p {
     height: 120px;
 }
 
-#tetrisTitleContainer{
+.desktopTitleImageContainer {
     width: 200px;
 }
 

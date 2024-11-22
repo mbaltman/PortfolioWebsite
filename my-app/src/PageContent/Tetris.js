@@ -7,7 +7,7 @@ const Tetris = () => {
     return (
         <div className="projectCard" id="tetrisProjectCard">
             <div className="titleSection">
-                <div id="tetrisTitleContainer" className="titleImageContainer">
+                <div className="titleImageContainer desktopTitleImageContainer">
                     <img id="titleImage" src="/images/TetrisGrowth/OpeningScreen.png" alt=""/>
                 </div>
                 <div className="topTitleSection">
