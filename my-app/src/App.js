@@ -75,7 +75,7 @@ function App() {
                             onClick={() => setActiveComponent('CubeGame')}
                         />
                         <NavItem
-                            title="Little Shop of Horros"
+                            title="Little Shop of Horrors"
                             subtitle="The Game"
                             iconSrc="/images/LittleShop/LittleShopIcon.png"
                             isActive={activeComponent === 'LittleShop'}
