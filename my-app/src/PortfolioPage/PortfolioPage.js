@@ -1,12 +1,12 @@
 import {useState} from "react";
-import AboutMe from "../PageContent/AboutMe";
-import CubeGame from "../PageContent/CubeGame";
-import Typo from "../PageContent/Typo";
-import Baskerville from "../PageContent/Baskerville";
-import LittleShop from "../PageContent/LittleShop";
-import Tetris from "../PageContent/Tetris";
-import ContactMe from "../PageContent/ContactMe";
-import NavItem from "../Components/NavItem";
+import AboutMe from "./PageContent/AboutMe";
+import CubeGame from "./PageContent/CubeGame";
+import Baskerville from "./PageContent/Baskerville";
+import Typo from "./PageContent/Typo";
+import LittleShop from "./PageContent/LittleShop";
+import Tetris from "./PageContent/Tetris";
+import ContactMe from "./PageContent/ContactMe";
+import NavItem from "./Components/NavItem";
 
 function PortfolioPage() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');

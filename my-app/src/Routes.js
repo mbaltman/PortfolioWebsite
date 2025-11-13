@@ -4,8 +4,8 @@ import {
     Route,
     Routes
 } from "react-router";
-import PortfolioPage from "./Pages/PortfolioPage";
-import MatchMaker from "./Pages/MatchMaker";
+import MatchMaker from "./Matchmaker/MatchMaker";
+import PortfolioPage from "./PortfolioPage/PortfolioPage";
 
 export const MyRoutes = () => {
     return (
