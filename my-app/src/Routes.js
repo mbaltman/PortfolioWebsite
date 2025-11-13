@@ -4,7 +4,7 @@ import {
     Route,
     Routes
 } from "react-router";
-import MatchMaker from "./Matchmaker/MatchMaker";
+import Matchmaker from "./Matchmaker/Matchmaker";
 import PortfolioPage from "./PortfolioPage/PortfolioPage";
 
 export const MyRoutes = () => {
@@ -12,7 +12,7 @@ export const MyRoutes = () => {
         <BrowserRouter>
             <Routes>
               <Route exact path="/" element={<PortfolioPage />} />
-              <Route path="/matchmaker" element={<MatchMaker />} />
+              <Route path="/matchmaker" element={<Matchmaker />} />
             </Routes>
         </BrowserRouter>
     );

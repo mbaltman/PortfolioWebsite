@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import emailjs from "@emailjs/browser";
-
-export default function MatchMaker() {
+import './Matchmaker.css'
+export default function Matchmaker() {
     const [formData, setFormData] = useState({
         name1: '',
         name2: '',

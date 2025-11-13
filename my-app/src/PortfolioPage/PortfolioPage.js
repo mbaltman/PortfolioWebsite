@@ -8,6 +8,7 @@ import Tetris from "./PageContent/Tetris";
 import ContactMe from "./PageContent/ContactMe";
 import NavItem from "./Components/NavItem";
 
+import './PortfolioPage.css'
 function PortfolioPage() {
     const [activeComponent, setActiveComponent] = useState('AboutMe');
 
