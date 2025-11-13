@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import './Matchmaker.css'
-export default function Matchmaker() {
+import './MatchMaker.css'
+export default function MatchMaker() {
     const [formData, setFormData] = useState({
         name1: '',
         name2: '',

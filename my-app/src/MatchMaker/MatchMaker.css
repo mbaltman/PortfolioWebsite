@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: pink !important;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     margin: 0;
