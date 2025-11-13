@@ -54,7 +54,7 @@ function PortfolioPage() {
             <div className="fullScreen" id="fullScreenImage">
                 <img id="pixelDesktopImg"
                      src="/images/ComputerPixelArt-HighResolution.png"
-                     alt="image of a desk, with two monitors, rendered in a pixel art style "/>
+                     alt="a desk, with two monitors, rendered in a pixel art style "/>
             </div>
 
             <div className="fullScreen" id="fullScreenContent">

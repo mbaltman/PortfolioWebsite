@@ -3,7 +3,7 @@ import './skillItem.css'
 export const SkillItem = ({skill}) => {
     return (
         <div className="skillItem">
-            <img className="skillItemIcon" src={skill[1]} alt="icon image"/>
+            <img className="skillItemIcon" src={skill[1]} alt="icon"/>
             <span className="skillItemTitle unselectable-text">{skill[0]}</span>
         </div>
     );

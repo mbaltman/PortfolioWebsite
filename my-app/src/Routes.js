@@ -10,11 +10,10 @@ import MatchMaker from "./Pages/MatchMaker";
 export const MyRoutes = () => {
     return (
         <BrowserRouter>
-
-        <Routes>
-          <Route exact path="/" element={<PortfolioPage />} />
-          <Route path="/matchmaker" element={<MatchMaker />} />
-        </Routes>
-            </BrowserRouter>
+            <Routes>
+              <Route exact path="/" element={<PortfolioPage />} />
+              <Route path="/matchmaker" element={<MatchMaker />} />
+            </Routes>
+        </BrowserRouter>
     );
 }

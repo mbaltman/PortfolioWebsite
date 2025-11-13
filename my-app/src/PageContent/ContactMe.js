@@ -42,13 +42,6 @@ const ContactMe = () => {
         return baseClass;
     };
 
-    const handleBlur = (field) => {
-        setTouched(prev => ({
-            ...prev,
-            [field]: true
-        }));
-    };
-
     const handleChange = (e) => {
         const { id, value } = e.target;
         setFormData(prev => ({
@@ -83,7 +76,7 @@ const ContactMe = () => {
             emailjs.send("service_mslak6b","template_3sudq7k",{
                 from_name: formData.name,
                 email: formData.email,
-                message:formData. message,
+                message:formData.message,
             });
             // Reset form after successful submission
             setFormData({ name: '', email: '', message: '' });
