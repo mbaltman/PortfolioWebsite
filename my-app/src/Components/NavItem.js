@@ -12,7 +12,7 @@ const NavItem = ({title, subtitle, iconSrc, isActive, onClick}) => {
                 {subtitle}
             </p>
             
-            <img className="navItemIcon" src={iconSrc} alt="icon image"/>
+            <img className="navItemIcon" src={iconSrc} alt="icon"/>
         </div>
     );
 };

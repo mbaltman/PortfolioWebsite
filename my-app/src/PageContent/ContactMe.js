@@ -2,10 +2,6 @@ import './projectCard.css'
 import emailjs from '@emailjs/browser';
 
 import React, { useState } from 'react';
-import AboutMe from "./AboutMe";
-import CubeGame from "./CubeGame";
-import Typo from "./Typo";
-import Tetris from "./Tetris";
 
 const ContactMe = () => {
     emailjs.init({
