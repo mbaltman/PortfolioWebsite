@@ -1,7 +1,7 @@
 import './projectCard.css'
 
-import { Skill, SkillItem, SkillContainer } from "../Components/SkillItem";  // Import both SkillItem and Skill
-import {ProgressItem, ProgressStatus} from "../Components/ProgressItem";
+import { Skill, SkillItem, SkillContainer } from "../components/SkillItem";  // Import both SkillItem and Skill
+import {ProgressItem, ProgressStatus} from "../components/ProgressItem";
 
 const CubeGame = () => {
     return (
@@ -12,7 +12,7 @@ const CubeGame = () => {
                 </div>
                 <div className="topTitleSection">
                     <h1 className="boldTitle">Untitled Cube Game</h1>
-                    <ProgressItem progress={ProgressStatus.INPROGRESS}></ProgressItem>
+                    <ProgressItem progressStatus={ProgressStatus.IN_PROGRESS}/>
                 </div>
                 <a className="boldTitle linkButton"
                    href="https://gitfront.io/r/mbaltman/Zwn9VZMJbYYr/CubeGame/">

@@ -1,6 +1,6 @@
 import './projectCard.css'
+import {Skill, SkillContainer, SkillItem} from "../components/SkillItem";
 
-import { Skill, SkillItem, SkillContainer } from "../Components/SkillItem";  // Import both SkillItem and Skill
 
 const AboutMe = () => {
     return (

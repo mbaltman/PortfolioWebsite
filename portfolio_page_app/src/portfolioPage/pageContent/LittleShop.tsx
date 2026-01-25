@@ -1,7 +1,7 @@
 import './projectCard.css'
 
-import { Skill, SkillItem, SkillContainer } from "../Components/SkillItem";  // Import both SkillItem and Skill
-import {ProgressItem, ProgressStatus} from "../Components/ProgressItem";
+import { Skill, SkillItem, SkillContainer } from "../components/SkillItem";  // Import both SkillItem and Skill
+import {ProgressItem, ProgressStatus} from "../components/ProgressItem";
 
 const LittleShop = () => {
     return (
@@ -12,7 +12,7 @@ const LittleShop = () => {
                 </div>
                 <div className="topTitleSection">
                     <h1 className="boldTitle">Little Shop of Horrors - The Game</h1>
-                    <ProgressItem progress={ProgressStatus.COMPLETED}></ProgressItem>
+                    <ProgressItem progressStatus={ProgressStatus.COMPLETED}/>
                 </div>
                 <a className="boldTitle linkButton"
                    href="https://github.com/mbaltman/LittleShopOfHorror">

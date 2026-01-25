@@ -1,12 +1,12 @@
 import {useState} from "react";
-import AboutMe from "./PageContent/AboutMe";
-import CubeGame from "./PageContent/CubeGame";
-import Baskerville from "./PageContent/Baskerville";
-import Typo from "./PageContent/Typo";
-import LittleShop from "./PageContent/LittleShop";
-import Tetris from "./PageContent/Tetris";
-import ContactMe from "./PageContent/ContactMe";
-import NavItem from "./Components/NavItem";
+import AboutMe from "./pageContent/AboutMe";
+import CubeGame from "./pageContent/CubeGame";
+import Baskerville from "./pageContent/Baskerville";
+import Typo from "./pageContent/Typo";
+import LittleShop from "./pageContent/LittleShop";
+import Tetris from "./pageContent/Tetris";
+import { ContactMe } from "./pageContent/ContactMe";
+import { NavItem } from "./components/NavItem";
 
 import './PortfolioPage.css'
 function PortfolioPage() {
@@ -63,12 +63,14 @@ function PortfolioPage() {
                     <div id="navBarInner">
                         <NavItem
                             title="About Me"
+                            subtitle=""
                             iconSrc="/images/AboutMeIcon.png"
                             isActive={activeComponent === 'AboutMe'}
                             onClick={() => setActiveComponent('AboutMe')}
                         />
                         <NavItem
                             title="Untitled Cube Game"
+                            subtitle=""
                             iconSrc="/images/CubeGame/CubeGameIcon.png"
                             isActive={activeComponent === 'CubeGame'}
                             onClick={() => setActiveComponent('CubeGame')}
@@ -83,10 +85,11 @@ function PortfolioPage() {
                     </div>
                     <NavItem
                         title="Tetris Growth"
+                        subtitle=""
                         iconSrc="/images/TetrisGrowth/OpeningScreen.png"
                         isActive={activeComponent === 'Tetris'}
                         onClick={() => setActiveComponent('Tetris')}
-                    />
+                        />
                 </div>
                 <div id="content">
                     {renderContent()}

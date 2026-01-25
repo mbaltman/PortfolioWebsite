@@ -12,14 +12,14 @@ export default function MatchMaker() {
         percentage: 0,
     });
     
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { id, value } = e.target;
         setFormData(prev => ({
             ...prev,
             [id]: value
         }));
     };
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         // Validate names
@@ -53,7 +53,7 @@ export default function MatchMaker() {
                        id="name1"
                        placeholder="Your Name"
                        required
-                       value={formData.name}
+                       value={formData.name1}
                        onChange={handleChange}
                 />
                 <input type="text"
@@ -61,7 +61,7 @@ export default function MatchMaker() {
                        id="name2"
                        placeholder="Their Name"
                        required
-                       value={formData.name}
+                       value={formData.name2}
                        onChange={handleChange}
                 />
             </div>
