@@ -51,6 +51,7 @@ export default function MatchMaker() {
             w-screen h-screen 
             bg-[url('/images/matchmaker/Tileable_Background.png')] bg-repeat bg-size-[200px]
             flex flex-row justify-center
+            pixelated
         ">
         <div className="
             flex flex-col justify-center text-center w-min
