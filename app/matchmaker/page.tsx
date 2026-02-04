@@ -7,7 +7,8 @@ export const metadata: Metadata = {
     icons: [
         {
             media: "",
-            url: "",
+            url: '/images/matchmaker/favicon.ico',
+            href: '/images/matchmaker/favicon.ico'
         }
     ]
 };
