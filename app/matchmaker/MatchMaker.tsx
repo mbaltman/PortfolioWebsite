@@ -1,7 +1,6 @@
 "use client"
 
 import React, {useState} from "react";
-import './MatchMaker.css'
 
 export default function MatchMaker() {
     const [formData, setFormData] = useState({
@@ -47,34 +46,42 @@ export default function MatchMaker() {
         setSubmitted(true)
     };
     
-    return (<div>
-        <h1>Is this a match?</h1>
-        <form onSubmit={handleSubmit}>
-            <div>
+    return (
+        <div className="
+            w-screen h-screen 
+            bg-[url('/images/matchmaker/Tileable_Background.png')] bg-repeat bg-size-[200px]
+            flex flex-row justify-center
+        ">
+        <div className="
+            flex flex-col justify-center text-center w-min
+            "
+        >
+            <h1 className="">Is this a match?</h1>
+            <form className="flex flex-col justify-center" onSubmit={handleSubmit}>
                 <input type="text"
-                       className=""
+                       className="text-center"
                        id="name1"
                        placeholder="Your Name"
                        required
                        value={formData.name1}
                        onChange={handleChange}
-                />
+                    />
                 <input type="text"
-                       className=""
+                       className="text-center"
                        id="name2"
                        placeholder="Their Name"
                        required
                        value={formData.name2}
                        onChange={handleChange}
                 />
+                <button type="submit"
+                        id="submitButton"
+                        className="">Calculate</button>
+            </form>
+                <h1>Results</h1>
+                <h2>{results.message}</h2>
+                <h2>Percentage Compatible: {results.percentage}%</h2>
             </div>
-            <button type="submit"
-                    id="submitButton"
-                    className="">Calculate</button>
-        </form>
-            <h1>Results</h1>
-            <h2>{results.message}</h2>
-            <h2>Percentage Compatible: {results.percentage}%</h2>
         </div>
     );
 }

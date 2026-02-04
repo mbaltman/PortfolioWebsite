@@ -5,7 +5,7 @@ import {Metadata} from "next";
 export const metadata: Metadata = {
   title: "Maxwell's Desktop",
 };
-export default function Home() {
+export default function Page() {
   return (
       <PortfolioPage/>
   );
