@@ -1,3 +1,5 @@
+'use client'
+
 import {useState} from "react";
 import AboutMe from "./pageContent/AboutMe";
 import CubeGame from "./pageContent/CubeGame";
