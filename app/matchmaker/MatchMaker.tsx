@@ -7,6 +7,8 @@ export default function MatchMaker() {
         name1: '',
         name2: '',
     });
+    const canSubmit = formData.name1 !== '' && formData.name2 !== '';
+
     const [submitted, setSubmitted] = useState(false);
 
     const [results, setResults] = useState({
@@ -52,6 +54,7 @@ export default function MatchMaker() {
             bg-[url('/images/matchmaker/Tileable_Background.png')] bg-repeat bg-size-[250px]
             flex flex-row justify-center
             pixelated
+            text-label-color
         ">
         <div className="
             flex flex-col justify-start text-center items-center min-w-min
@@ -68,12 +71,17 @@ export default function MatchMaker() {
                 min-h-[85px] max-h-[85px]
                 flex flex-col justify-center text-center
              ">
-                <h1>Is this a match?</h1>
+                <h1 className="roboto-mono-font-bold">
+                    Compatibility
+                </h1>
+                <h1 className="roboto-mono-font-bold">
+                    Calculator
+                </h1>
             </div>
 
             <form className="
             flex flex-col justify-center items-center
-            p-2 md:p-5
+            p-2 
             gap-2
             " onSubmit={handleSubmit}>
                 <div className="
@@ -86,7 +94,7 @@ export default function MatchMaker() {
                     flex flex-col justify-center text-center
                 ">
                     <input type="text"
-                           className="text-center outline-none"
+                           className="text-center outline-none roboto-mono-font-regular"
                            id="name1"
                            placeholder="Your Name"
                            required
@@ -114,7 +122,7 @@ export default function MatchMaker() {
                     flex flex-col justify-center text-center
                 ">
                     <input type="text"
-                           className="text-center outline-none"
+                           className="text-center outline-none roboto-mono-font-regular text-label-color"
                            id="name2"
                            placeholder="Their Name"
                            required
@@ -125,7 +133,7 @@ export default function MatchMaker() {
                 
                 <button type="submit"
                         id="submitButton"
-                        className="
+                        className={`
                             bg-[url('/images/matchmaker/red-button.png')] 
                             bg-no-repeat
                             bg-contain
@@ -133,7 +141,11 @@ export default function MatchMaker() {
                             min-w-[180px] max-w-[180px]
                             min-h-[45px] max-h-[45px]
                             flex flex-col justify-center text-center
-                        ">
+                            roboto-mono-font-bold
+                            ease-in duration-200
+                            ${canSubmit ?  'saturate-100' : 'saturate-25'}
+                            `}
+                        >
                     Calculate
                 </button>
             </form>
