@@ -49,40 +49,98 @@ export default function MatchMaker() {
     return (
         <div className="
             w-screen h-screen 
-            bg-[url('/images/matchmaker/Tileable_Background.png')] bg-repeat bg-size-[200px]
+            bg-[url('/images/matchmaker/Tileable_Background.png')] bg-repeat bg-size-[250px]
             flex flex-row justify-center
             pixelated
         ">
         <div className="
-            flex flex-col justify-center text-center w-min
+            flex flex-col justify-start text-center items-center min-w-min
+            px-1 md:px-4
+            py-2 md:py-6
             "
         >
-            <h1 className="">Is this a match?</h1>
-            <form className="flex flex-col justify-center" onSubmit={handleSubmit}>
-                <input type="text"
-                       className="text-center"
-                       id="name1"
-                       placeholder="Your Name"
-                       required
-                       value={formData.name1}
-                       onChange={handleChange}
+            <div className="
+                bg-[url('/images/matchmaker/header-background.png')] 
+                bg-no-repeat
+                bg-contain
+                pixelated
+                min-w-[365px] max-w-[365px]
+                min-h-[85px] max-h-[85px]
+                flex flex-col justify-center text-center
+             ">
+                <h1>Is this a match?</h1>
+            </div>
+
+            <form className="
+            flex flex-col justify-center items-center
+            p-2 md:p-5
+            gap-2
+            " onSubmit={handleSubmit}>
+                <div className="
+                    bg-[url('/images/matchmaker/form-field-background.png')] 
+                    bg-no-repeat
+                    bg-contain
+                    pixelated
+                    min-w-[160px] max-w-[160px]
+                    min-h-[40px] max-h-[40px]
+                    flex flex-col justify-center text-center
+                ">
+                    <input type="text"
+                           className="text-center outline-none"
+                           id="name1"
+                           placeholder="Your Name"
+                           required
+                           value={formData.name1}
+                           onChange={handleChange}
                     />
-                <input type="text"
-                       className="text-center"
-                       id="name2"
-                       placeholder="Their Name"
-                       required
-                       value={formData.name2}
-                       onChange={handleChange}
-                />
+                </div>
+                <div className="
+                    bg-[url('/images/matchmaker/plus.png')] 
+                    bg-no-repeat
+                    bg-contain
+                    pixelated
+                    min-w-[55px] max-w-[55px]
+                    min-h-[55px] max-h-[55px]
+                ">
+                </div>
+
+                <div className="
+                    bg-[url('/images/matchmaker/form-field-background.png')] 
+                    bg-no-repeat
+                    bg-contain
+                    pixelated
+                    min-w-[160px] max-w-[160px]
+                    min-h-[40px] max-h-[40px]
+                    flex flex-col justify-center text-center
+                ">
+                    <input type="text"
+                           className="text-center outline-none"
+                           id="name2"
+                           placeholder="Their Name"
+                           required
+                           value={formData.name2}
+                           onChange={handleChange}
+                        />
+                    </div>
+                
                 <button type="submit"
                         id="submitButton"
-                        className="">Calculate</button>
+                        className="
+                            bg-[url('/images/matchmaker/red-button.png')] 
+                            bg-no-repeat
+                            bg-contain
+                            pixelated
+                            min-w-[180px] max-w-[180px]
+                            min-h-[45px] max-h-[45px]
+                            flex flex-col justify-center text-center
+                        ">
+                    Calculate
+                </button>
             </form>
-                <h1>Results</h1>
-                <h2>{results.message}</h2>
-                <h2>Percentage Compatible: {results.percentage}%</h2>
-            </div>
+            <h1>Results</h1>
+            <h2>{results.message}</h2>
+            <h2>Percentage Compatible: {results.percentage}%</h2>
+        </div>
         </div>
     );
 }
