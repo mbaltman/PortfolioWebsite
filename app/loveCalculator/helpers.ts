@@ -1,4 +1,4 @@
-import {CompatibilityReport} from "@/app/matchmaker/dataobjects";
+import {CompatibilityReport} from "@/app/loveCalculator/dataobjects";
 
 export function isValidName(name: string): boolean {
     return name.trim() != '';
@@ -13,7 +13,7 @@ export function getReport(name1: string, name2: string): CompatibilityReport{
 
     }
     
-    return {subtitle: subtitle, score: 3, summary: "I don't think this is going to work out"}
+    return {subtitle: subtitle, score: 10, summary: "I don't think this is going to work out"}
 }
 
 
