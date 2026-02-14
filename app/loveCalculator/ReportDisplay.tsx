@@ -1,5 +1,6 @@
 import {CompatibilityReport} from "@/app/loveCalculator/dataobjects";
 import HeartFilling from "@/app/loveCalculator/HeartFilling";
+import {useEffect, useState} from "react";
 
 
 type ReportDisplayProps = {
@@ -8,6 +9,13 @@ type ReportDisplayProps = {
     onHideReport: () => void;
 }
 export default function ReportDisplay({report, showReport, onHideReport}: ReportDisplayProps) {
+    const [reportKey, setReportKey] = useState(0);
+
+    useEffect(() => {
+        if (showReport) {
+            setReportKey((prev) => prev + 1);
+        }
+    }, [showReport]);
     
     return (
         <div className={`
@@ -60,12 +68,18 @@ export default function ReportDisplay({report, showReport, onHideReport}: Report
                 {report && (
                     <div className="
                     roboto-mono-font-regular
+                    gap-2 flex flex-col 
                     "
                     >
                         <p className="text-sm"> {report.subtitle} </p>
-                        <br/>
                         <p className="text-sm"> {report.summary}</p>
-                        <HeartFilling score={report.score}></HeartFilling>
+                        <div className="
+                        w-full
+                        flex flex-col items-center
+                        ">
+                            <HeartFilling score={report.score} key={reportKey} ></HeartFilling>
+
+                        </div>
 
                     </div>
                 )}
