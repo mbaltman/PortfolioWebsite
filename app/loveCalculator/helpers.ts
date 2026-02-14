@@ -24,7 +24,8 @@ const aAndMSummaryOptions = [
     "Maxwell.. hmmm. He can be stubborn, self-conscious, distracted. \n He can also be loyal, passionate, and incredibly handsome. I think that if you find yourself a Maxwell, you should give him a chance.",
     "For these two to find each other is one of those chance encounters that you could only hope for. There are a lot of people in the world, and in New York. To find someone you truly connect with is special.",
     "There is something that feels cosmically destined about this pairing. The magnetic connection here is strong. Follow your gut.", 
-    "YES. ABSOLUTELY. 100%"
+    "YES. ABSOLUTELY. 100%", 
+    "Nothing is guaranteed in life. Even if someone is compatible, it takes more than that to build a relationship. That being said, I know that Maxwell wants to try. He is also hopelessly in love with you."
 ]
 
 const negativeOptions = [
