@@ -4,9 +4,10 @@ import HeartFilling from "@/app/loveCalculator/HeartFilling";
 
 type ReportDisplayProps = {
     report: CompatibilityReport | null;
+    showReport: boolean;
     onHideReport: () => void;
 }
-export default function ReportDisplay({report, onHideReport}: ReportDisplayProps) {
+export default function ReportDisplay({report, showReport, onHideReport}: ReportDisplayProps) {
     
     return (
         <div className={`
@@ -16,7 +17,7 @@ export default function ReportDisplay({report, onHideReport}: ReportDisplayProps
             h-[500px]
             duration-400
             ease-in
-            ${report != null ? 'top-[0px]': 'top-[1000px]'}
+            ${showReport ? 'top-[0px]': 'top-[1000px]'}
             `}
         >
             <div className="

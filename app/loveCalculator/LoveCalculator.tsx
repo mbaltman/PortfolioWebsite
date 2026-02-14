@@ -15,6 +15,7 @@ export default function LoveCalculator() {
     
     const [report, setReport] = useState<CompatibilityReport | null >(null);
 
+    const [showReport, setShowReport] = useState(false);
     const [showInfo, setShowInfo] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +35,7 @@ export default function LoveCalculator() {
 
         const newReport = getReport(formData.name1, formData.name2);
         setReport(newReport);
+        setShowReport(true)
     };
     
     return (
@@ -151,7 +153,8 @@ export default function LoveCalculator() {
 
                     <ReportDisplay
                         report={report}
-                        onHideReport={() => setReport(null)}
+                        showReport={showReport}
+                        onHideReport={() => setShowReport(false)}
                     />
 
                     <InfoDisplay
